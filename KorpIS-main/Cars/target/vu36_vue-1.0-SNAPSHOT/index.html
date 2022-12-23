@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Справочник ремонта вагонов</title>
+        <link rel="stylesheet" href="styles/table.css">
+    </head>
+    <body>
+        <div id="head">
+            <h1> {{header}} </h1>
+        </div>        
+        <div id="tableFill">
+            
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th  v-for="field in fields" v-bind:id="field.id"> {{field.name}}</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr v-for="item in list">
+                        <td v-for="field in fields" v-bind:label="field.name">{{item[field.id]}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+        <script src="scripts/main.js"></script>
+        
+    </body>
+</html>

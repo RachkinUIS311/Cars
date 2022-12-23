@@ -1,0 +1,6 @@
+com\mycompany\server\jaxrs\model\VU36Model.class
+com\mycompany\server\jaxrs\model\VU36List.class
+com\mycompany\server\jaxrs\dao\DBMethods.class
+com\mycompany\server\jaxrs\service\ServerService.class
+com\mycompany\server\resources\JavaEE8Resource.class
+com\mycompany\server\JAXRSConfiguration.class
